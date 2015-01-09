@@ -1,0 +1,120 @@
+/*** COLOR SCHEME
+darkest: #483163;
+medium: #8057B0;
+light: #A571E3;
+muted: #CAAFE9;
+***/
+
+@import url(http://fonts.googleapis.com/css?family=Cabin|Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700,200,300);
+
+body {
+  margin:0;
+  padding:0;
+  background-color: #483163;
+  font-family:'Open Sans Condensed', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+  padding:0;
+  margin:0;
+}
+
+p {
+  margin:0px;
+}
+
+a {
+  color:#483163;
+}
+
+.profile-card {
+  width:260px;
+  color:black;
+  padding:0;
+  margin-bottom:200px;
+}
+.content-wrapper {
+  padding:20px;
+}
+img.profile-pic {
+  margin-top:20px;
+  border-color:#483163;
+  transition:border-color .8s ease-in-out;
+  opacity:1;
+
+}
+img.profile-pic:hover {
+  border-color:#A571E3 ;
+  opacity:1;
+  -webkit-animation: upDown 2s infinite; /* Safari 4+ */
+  -moz-animation:    upDown 2s infinite; /* Fx 5+ */
+  -o-animation:      upDown 2s infinite; /* Opera 12+ */
+  animation:         upDown 2s infinite; /* IE 10+, Fx 29+ */
+}
+.profile-buttons {
+  width:100%;
+
+}
+.profile-buttons a {
+  display:inline;
+  padding:8px;
+}
+
+.stats {
+  color:black;
+}
+
+  position:relative;
+  width:33%;
+}
+
+
+.stats p {
+  display:inline;
+}
+
+.profile-buttons-wrapper {
+  border-top:thin solid #CAAFE9;
+
+}
+
+.profile-button {
+  width:50%;
+  padding-top:10px;
+  padding-bottom:10px;
+  float:left;
+  font-size:14px;
+  text-align:center;
+  transition:color 1s ease-in-out;
+  transition:background-color 1s ease-in-out;
+}
+.profile-button:hover {
+  color:white;
+  background-color:#483163;
+}
+
+
+/*ANIMATION STUFF*/
+@-webkit-keyframes upDown {
+  0%,  { -webkit-transform: translate(0px, 0px);}
+  50% { -webkit-transform: translate(0px, -20px);}
+}
+@-moz-keyframes upDown {
+  0%,  { -webkit-transform: translate(0px, 0px);}
+  50% { -webkit-transform: translate(0px, -20px);}
+  100% {-webkit-transform: translate(0px, 20px;)}
+}
+@-o-keyframes upDown {
+  0%,  { -webkit-transform: translate(0px, 0px);}
+  50% { -webkit-transform: translate(0px, -20px);}
+  100% {-webkit-transform: translate(0px, 20px;)}
+}
+@keyframes upDown {
+  0%,  { -webkit-transform: translate(0px, 0px);}
+  50% { -webkit-transform: translate(0px, -20px);}
+  100% {-webkit-transform: translate(0px, 20px;)}
+}

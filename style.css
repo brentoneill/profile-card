@@ -21,9 +21,6 @@ a {
 }
 
 
-a.fa :hover {
-  color:#26A86D;
-}
 
 ul {
   padding:0;
@@ -34,19 +31,6 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   font-family:'Slabo 27px';
 }
-
-h3 {
-  margin-bottom:4px;
-  margin-top:10px;
-}
-
-h5 {
-  font-family:'Raleway', serif;
-  color:grey;
-  margin:0;
-  display:inline;
-}
-
 
 h1 {
   font-size:4em;
@@ -61,6 +45,27 @@ h3.name {
   font-size:2em;
 }
 
+h3 {
+  margin-bottom:4px;
+  margin-top:10px;
+}
+
+h4 {
+  font-family:'Raleway', serif;
+  margin-bottom:10px;
+  margin-top:0px;
+}
+
+h5 {
+  font-family:'Raleway', serif;
+  color:grey;
+  margin:0;
+  display:inline;
+}
+
+.fa-2x {
+  vertical-align:middle;
+}
 
 .profile-card {
   margin:0 auto;
@@ -110,10 +115,9 @@ img.profile-pic {
   transition:border-color .8s ease-in-out;
   transition:opacity .8s ease-in-out;
   margin:0 auto;
-  margin-bottom:20px;
 }
 img.profile-pic:hover {
-  opacity:.8;
+  opacity:.5;
   border-color:#26A86D;
 }
 
@@ -123,7 +127,7 @@ img.profile-pic:hover {
   color:white;
   border-radius:5px;
   margin:0 auto;
-  margin-bottom:20px;
+  margin-top:20px;
 }
 
 .button:hover {
@@ -135,6 +139,14 @@ img.profile-pic:hover {
 
 
 /**** Right side, profile text ****/
+.buttons-under-name a {
+  transition:color .5s ease-in-out;
+}
+.buttons-under-name a:hover {
+  color:grey;
+}
+
+
 .profile-info {
   margin-top:10px;
   overflow:hidden;
@@ -162,13 +174,24 @@ img.profile-pic:hover {
   padding-left:10px;
 }
 
+.status {
+  margin-top:32px;
+}
+
+.status-text {
+  text-align:center;
+  font-style:italic;
+  font-weight:200;
+  font-size:15px;
+
+  -webkit-animation: grow-shrink 5s infinite; /* Safari 4+ */
+  -moz-animation:    grow-shrink 5s infinite; /* Fx 5+ */
+  -o-animation:      grow-shrink 5s infinite; /* Opera 12+ */
+  animation:         grow-shrink 5s infinite; /* IE 10+, Fx 29+ */
+}
 
 /**** END Right side, profile text ****/
 
-.social {
-  display:block;
-  width:100%;
-}
 
 
 /*ANIMATION STUFF*/
@@ -178,23 +201,21 @@ img.profile-pic:hover {
 }
 
 @-moz-keyframes grow-shrink {
-  0%,100% { font-size:2em; }
-  33% { font-size:2.2em;}
-  66% { font-size:2.5em;}
-  100% { font-size:2.2em;}
+  0%,100% {transform:scale(1);}
+  50% {transform:scale(1.2);}
 }
 @-o-keyframes grow-shrink {
-  0%,100% { font-size:2em; }
-  33% { font-size:2.2em;}
-  66% { font-size:2.5em;}
-  100% { font-size:2.2em;}
+  0%,100% {transform:scale(1);}
+  50% {transform:scale(1.2);}
 }
 @keyframes grow-shrink {
-  0%,100% { font-size:2em; }
-  33% { font-size:2.2em;}
-  66% { font-size:2.5em;}
-  100% { font-size:2.2em;}
+  0%,100% {transform:scale(1);}
+  50% {transform:scale(1.2);}
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow {
+  transition: all .2s ease-in-out;
+  }
+.grow:hover {
+  transform: scale(1.1);
+}
