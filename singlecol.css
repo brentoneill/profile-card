@@ -96,25 +96,3 @@ img.profile-pic:hover {
   color:white;
   background-color:#483163;
 }
-
-
-/*ANIMATION STUFF*/
-@-webkit-keyframes upDown {
-  0%,  { -webkit-transform: translate(0px, 0px);}
-  50% { -webkit-transform: translate(0px, -20px);}
-}
-@-moz-keyframes upDown {
-  0%,  { -webkit-transform: translate(0px, 0px);}
-  50% { -webkit-transform: translate(0px, -20px);}
-  100% {-webkit-transform: translate(0px, 20px;)}
-}
-@-o-keyframes upDown {
-  0%,  { -webkit-transform: translate(0px, 0px);}
-  50% { -webkit-transform: translate(0px, -20px);}
-  100% {-webkit-transform: translate(0px, 20px;)}
-}
-@keyframes upDown {
-  0%,  { -webkit-transform: translate(0px, 0px);}
-  50% { -webkit-transform: translate(0px, -20px);}
-  100% {-webkit-transform: translate(0px, 20px;)}
-}
